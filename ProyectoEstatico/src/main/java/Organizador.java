@@ -1,0 +1,1 @@
+public record Organizador(Usuario usuario, String telefono) {}

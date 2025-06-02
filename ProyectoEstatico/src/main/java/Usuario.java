@@ -1,0 +1,1 @@
+public record Usuario(String correo ,String nombre) {}
