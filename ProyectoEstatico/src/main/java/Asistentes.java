@@ -1,0 +1,1 @@
+public record Asistentes(Eventos evento,Usuario usuario) {}
