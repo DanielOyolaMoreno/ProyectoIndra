@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Eventos Sostenibles</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Eventos Sostenibles</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="eventos.html" class="active">Eventos</a></li>
+                    <li><a id="loginBtn" class="btn-secondary">Iniciar Sesión</a></li>
+                    <li><a id="registerBtn" class="btn-primary">Registrarse</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Eventos para un futuro sostenible</h2>
+            <p>Descubre y participa en eventos relacionados con la sostenibilidad y el medio ambiente</p>
+            <a href="eventos.html" class="btn-primary">Ver Eventos</a>
+        </div>
+    </section>
+
+    <section class="featured-events">
+        <div class="container">
+            <h2>Eventos Destacados</h2>
+
+            <div class="carousel-container">
+                <div class="carousel-wrapper" id="eventCarousel">
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/300x200?text=Conferencia+Energías+Renovables"
+                            alt="Conferencia sobre Energías Renovables">
+                        <h3>Conferencia sobre Energías Renovables</h3>
+                        <p>Fecha: 15 de Junio, 2025</p>
+                        <p>Ubicación: Centro de Convenciones</p>
+                        <a href="detalle_evento.html?id=1" class="btn-secondary">Ver detalles</a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/300x200?text=Taller+Reciclaje"
+                            alt="Taller de Reciclaje Creativo">
+                        <h3>Taller de Reciclaje Creativo</h3>
+                        <p>Fecha: 22 de Junio, 2025</p>
+                        <p>Ubicación: Parque Central</p>
+                        <a href="detalle_evento.html?id=2" class="btn-secondary">Ver detalles</a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/300x200?text=Seminario+Online"
+                            alt="Seminario Online: Huella de Carbono">
+                        <h3>Seminario Online: Huella de Carbono</h3>
+                        <p>Fecha: 5 de Julio, 2025</p>
+                        <p>Ubicación: Online</p>
+                        <a href="detalle_evento.html?id=3" class="btn-secondary">Ver detalles</a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/300x200?text=Feria+Sostenible"
+                            alt="Feria de Productos Sostenibles">
+                        <h3>Feria de Productos Sostenibles</h3>
+                        <p>Fecha: 12 de Julio, 2025</p>
+                        <p>Ubicación: Plaza Mayor</p>
+                        <a href="detalle_evento.html?id=4" class="btn-secondary">Ver detalles</a>
+                    </div>
+                </div>
+                <button id="prevBtn" class="carousel-btn prev-btn">&lt;</button>
+                <button id="nextBtn" class="carousel-btn next-btn">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2>Categorías de Eventos</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/150?text=Conferencias" alt="Conferencias">
+                    <h3>Conferencias</h3>
+                    <a href="eventos.html?categoria=conferencias">Ver eventos</a>
+                </div>
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/150?text=Talleres" alt="Talleres">
+                    <h3>Talleres</h3>
+                    <a href="eventos.html?categoria=talleres">Ver eventos</a>
+                </div>
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/150?text=Seminarios" alt="Seminarios">
+                    <h3>Seminarios</h3>
+                    <a href="eventos.html?categoria=seminarios">Ver eventos</a>
+                </div>
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/150?text=Ferias" alt="Ferias">
+                    <h3>Ferias</h3>
+                    <a href="eventos.html?categoria=ferias">Ver eventos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Eventos Sostenibles</h3>
+                    <p>Tu portal de eventos sostenibles</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: info@ecoeventos.com</p>
+                    <p>Teléfono: +34 123 456 789</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eventos Sostenibles. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Registro de Usuario</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirmar contraseña:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit" class="btn-primary">Registrarse</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Correo electrónico:</label>
+                    <input type="email" id="loginEmail" name="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Contraseña:</label>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+                </div>
+                <button type="submit" class="btn-primary">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/usuarios.js"></script>
+    <script src="js/eventos.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+
+</html>

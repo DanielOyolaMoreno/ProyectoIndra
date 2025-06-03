@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Evento - Eventos Sostenibles</title>
+    <link rel="stylesheet" href="css/styles.css ">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Eventos Sostenibles</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="eventos.html" class="active">Eventos</a></li>
+                    <li><a id="loginBtn" class="btn-secondary">Iniciar Sesión</a></li>
+                    <li><a id="registerBtn" class="btn-primary">Registrarse</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="event-detail" id="eventDetail">
+    </section>
+
+    <section class="related-events">
+        <div class="container">
+            <h2>Eventos Relacionados</h2>
+            <div class="events-grid" id="relatedEventsContainer">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Eventos Sostenibles</h3>
+                    <p>Tu portal de eventos sostenibles</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: info@ecoeventos.com</p>
+                    <p>Teléfono: +34 123 456 789</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eventos Sostenibles. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Registro de Usuario</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirmar contraseña:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit" class="btn-primary">Registrarse</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Correo electrónico:</label>
+                    <input type="email" id="loginEmail" name="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Contraseña:</label>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+                </div>
+                <button type="submit" class="btn-primary">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="inscriptionModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Inscripción al Evento</h2>
+            <p id="inscriptionEventName"></p>
+            <form id="inscriptionForm">
+                <div class="form-group">
+                    <label for="inscriptionNombre">Nombre completo:</label>
+                    <input type="text" id="inscriptionNombre" name="inscriptionNombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="inscriptionEmail">Correo electrónico:</label>
+                    <input type="email" id="inscriptionEmail" name="inscriptionEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="inscriptionTelefono">Teléfono:</label>
+                    <input type="tel" id="inscriptionTelefono" name="inscriptionTelefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="inscriptionComentarios">Comentarios (opcional):</label>
+                    <textarea id="inscriptionComentarios" name="inscriptionComentarios"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Confirmar Inscripción</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/usuarios.js"></script>
+    <script src="js/eventos.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+
+</html>
